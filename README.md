@@ -1,14 +1,12 @@
 # Agente Telefónico IA para Agendamiento Automático de Citas - Presentación estilo Canva
 
-## Slide 1: Título
-
 **Agente Telefónico con Inteligencia Artificial**  
 **Para Agendamiento Automático de Citas**  
 📞🤖 100% Automatizado • IA Conversacional • Eficiencia 24/7
 
 ---
 
-## Slide 2: ¿Qué es este sistema?
+## ¿Qué es este sistema?
 
 Un **asistente telefónico autónomo** que llama, escucha, interpreta y registra citas de servicio sin intervención humana.
 
@@ -18,7 +16,7 @@ Un **asistente telefónico autónomo** que llama, escucha, interpreta y registra
 
 ---
 
-## Slide 3: ¿Qué puede hacer?
+## ¿Qué puede hacer?
 
 - ✅ Llamadas salientes automáticas para proponer citas  
 - ✅ Reconocimiento de voz en español natural  
@@ -28,7 +26,7 @@ Un **asistente telefónico autónomo** que llama, escucha, interpreta y registra
 
 ---
 
-## Slide 4: Gestión inteligente de citas
+## Gestión inteligente de citas
 
 - 🗓️ Verifica disponibilidad real de técnicos  
 - 🔍 Evalúa horarios laborales, días bloqueados y compatibilidad de servicios  
@@ -38,7 +36,7 @@ Un **asistente telefónico autónomo** que llama, escucha, interpreta y registra
 
 ---
 
-## Slide 5: IA Conversacional con OpenAI
+## IA Conversacional con OpenAI
 
 Utiliza **GPT-4o** para entender frases como:
 
@@ -62,7 +60,7 @@ Devuelve un JSON estructurado con la intención del cliente:
 
 ---
 
-## Slide 6: Tecnologías utilizadas
+## Tecnologías utilizadas
 
 | Componente            | Tecnología           |
 |----------------------|------------------------|
@@ -74,7 +72,7 @@ Devuelve un JSON estructurado con la intención del cliente:
 
 ---
 
-## Slide 7: Ejemplo real de interacción
+## Ejemplo real de interacción
 
 > 💬 Bot: *Hola, María. Le llamo para agendar la inspección. Tenemos disponible el miércoles 26 a las 10:00. ¿Le parece bien?*  
 > 👤 Cliente: *¿Puede ser mejor el jueves en la tarde?*  
@@ -82,7 +80,7 @@ Devuelve un JSON estructurado con la intención del cliente:
 
 ---
 
-## Slide 8: Fácil de configurar e implementar
+## Fácil de configurar e implementar
 
 1. Crear hojas de cálculo (Técnicos + Citas)  
 2. Conectarlas vía SheetDB  
@@ -92,7 +90,7 @@ Devuelve un JSON estructurado con la intención del cliente:
 
 ---
 
-## Slide 9: ¿Quieres usarlo en tu negocio?
+## ¿Quieres usarlo en tu negocio?
 
 Este sistema es ideal para:
 
@@ -100,6 +98,6 @@ Este sistema es ideal para:
 - Soporte a clientes  
 - Agencias tecnológicas que integran IA y telefonía
 
-🔗 [Visita mi portafolio para más soluciones](https://federicogzc.github.io)
+🔗 [Visita mi portal para más soluciones](https://federicogzc.github.io)
 
 ---
