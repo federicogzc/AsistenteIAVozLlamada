@@ -1,71 +1,105 @@
-# 🤖📞 Agente Telefónico IA para Agendamiento Automático de Citas
+# Agente Telefónico IA para Agendamiento Automático de Citas - Presentación estilo Canva
+
+## Slide 1: Título
+
+**Agente Telefónico con Inteligencia Artificial**  
+**Para Agendamiento Automático de Citas**  
+📞🤖 100% Automatizado • IA Conversacional • Eficiencia 24/7
 
 ---
 
-## ¿Qué es este proyecto?
+## Slide 2: ¿Qué es este sistema?
 
-Este sistema es un **agente telefónico inteligente totalmente automatizado** que **realiza y recibe llamadas** para **agendar, confirmar y reprogramar citas de servicio** —sin intervención humana.
+Un **asistente telefónico autónomo** que llama, escucha, interpreta y registra citas de servicio sin intervención humana.
 
-Gracias al uso de **Inteligencia Artificial (IA)** y **Procesamiento de Lenguaje Natural (NLP)**, es capaz de mantener conversaciones fluidas con los clientes y tomar decisiones en tiempo real.
-
----
-
-## 💡 Mejorando Vidas: Empresas eficientes, Clientes felices
-
-### ✅ Para las Empresas
-
-- 💰 **Reducción de costos**: sin agentes humanos, solo pagas por el uso de API y llamadas.
-- 🕐 **Operatividad 24/7**: disponible cualquier día, a cualquier hora.
-- ⚙️ **Escalabilidad**: maneja cientos o miles de llamadas simultáneas.
-- 📉 **Menos ausencias**: confirma citas activamente, reduciendo no-shows.
-- 📞 **Profesionalismo constante**: cada llamada sigue un guion de alta calidad.
-
-### 🙋‍♂️ Para los Clientes
-
-- ⚡ **Atención inmediata**: sin esperas, llamada directa y clara.
-- 🔄 **Comodidad**: pueden aceptar o cambiar la cita en segundos.
-- 🧠 **Conversación natural**: se siente como hablar con una persona.
+- 👉 Usa IA para entender lenguaje natural  
+- 👉 Funciona 24/7 sin pausa  
+- 👉 Escucha al cliente, toma decisiones y actualiza la base de datos
 
 ---
 
-## 🧰 Aspectos Técnicos de Interés
+## Slide 3: ¿Qué puede hacer?
 
-### 🛠️ Tecnologías Clave
-
-- **📡 Plataforma CPaaS**: como [Voximplant](https://voximplant.com) o [Twilio](https://twilio.com).
-- **🧠 IA GPT-4o**: vía API de OpenAI para interpretar intenciones.
-- **📊 Base de datos ligera**: Google Sheets + [SheetDB](https://sheetdb.io) para acceso vía REST API.
+- ✅ Llamadas salientes automáticas para proponer citas  
+- ✅ Reconocimiento de voz en español natural  
+- ✅ Interpretación de frases como: “prefiero el jueves en la tarde”  
+- ✅ Confirmación, reagendamiento o cancelación sin agentes humanos  
+- ✅ Manejo de llamadas entrantes con respuestas claras
 
 ---
 
-## 🔁 ¿Cómo funciona el flujo?
+## Slide 4: Gestión inteligente de citas
 
-1. **🎯 Disparo del proceso**  
-   Evento externo (nueva fila en hoja o llamada API).
+- 🗓️ Verifica disponibilidad real de técnicos  
+- 🔍 Evalúa horarios laborales, días bloqueados y compatibilidad de servicios  
+- ⚙️ Encuentra el primer hueco disponible  
+- ↻ Reagenda si el cliente propone nueva fecha/hora  
+- 🗣️ Confirmación inmediata
 
-2. **🔎 Búsqueda inteligente**  
-   Consulta la disponibilidad de técnicos con reglas de negocio.
+---
 
-3. **📞 Llamada saliente**  
-   El agente IA llama al cliente y propone la mejor cita disponible.
+## Slide 5: IA Conversacional con OpenAI
 
-4. **🗣️ Escucha e interpretación**  
-   Usa TTS + ASR + OpenAI para entender la respuesta del cliente.
+Utiliza **GPT-4o** para entender frases como:
 
-5. **🧠 Decisión basada en intención**  
-   OpenAI responde con algo como:
-   ```json
-   {
-     "acepta_cita": true,
-     "quiere_nueva_fecha": false
-   }
-📝 Acción
+- “el martes por la mañana”  
+- “cámbiala al 15 de julio”  
+- “quiero cancelarla”  
+- “está bien a las 4, pero mejor en la tarde”
 
-Si acepta → se agenda la cita y se despide.
+Devuelve un JSON estructurado con la intención del cliente:
 
-Si propone otra fecha → el sistema busca otra opción.
+```json
+{
+  "acepta_cita": true,
+  "quiere_nueva_fecha": false,
+  "cancelar_todo": false,
+  "nueva_fecha": "",
+  "hora": "",
+  "consultar_opciones": false
+}
+```
 
-Si cancela → se registra y se finaliza.
+---
 
-📥 Llamadas entrantes
-También responde llamadas, con información sobre citas o un mensaje estándar.
+## Slide 6: Tecnologías utilizadas
+
+| Componente            | Tecnología           |
+|----------------------|------------------------|
+| Telefonía en la nube | Voximplant / Twilio    |
+| Voz (TTS)             | Google Cloud TTS       |
+| Reconocimiento de voz| Google ASR             |
+| IA Conversacional    | OpenAI GPT-4o          |
+| Base de datos        | Google Sheets + SheetDB|
+
+---
+
+## Slide 7: Ejemplo real de interacción
+
+> 💬 Bot: *Hola, María. Le llamo para agendar la inspección. Tenemos disponible el miércoles 26 a las 10:00. ¿Le parece bien?*  
+> 👤 Cliente: *¿Puede ser mejor el jueves en la tarde?*  
+> 🧐 Bot: *He encontrado disponibilidad el jueves a las 16:00. ¿Confirmamos esta nueva cita?*
+
+---
+
+## Slide 8: Fácil de configurar e implementar
+
+1. Crear hojas de cálculo (Técnicos + Citas)  
+2. Conectarlas vía SheetDB  
+3. Configurar claves (OpenAI, CallerID, etc.)  
+4. Subir el script a tu proveedor CPaaS  
+5. ✔️ Listo, empieza a agendar llamadas automáticas
+
+---
+
+## Slide 9: ¿Quieres usarlo en tu negocio?
+
+Este sistema es ideal para:
+
+- Empresas de servicios técnicos  
+- Soporte a clientes  
+- Agencias tecnológicas que integran IA y telefonía
+
+🔗 [Visita mi portafolio para más soluciones](https://federicogzc.github.io)
+
+---
