@@ -1,5 +1,4 @@
-# Agente Telefónico IA para Agendamiento Automático de Citas - Presentación estilo Canva
-
+# Agente Telefónico IA para Agendamiento Automático de Citas 
 **Agente Telefónico con Inteligencia Artificial**  
 **Para Agendamiento Automático de Citas**  
 📞🤖 100% Automatizado • IA Conversacional • Eficiencia 24/7
